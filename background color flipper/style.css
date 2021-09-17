@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    text-align: center;
+    font-size: 62.5%;
+}
+
+nav {
+    height: 10vh;
+    background-color: darkgrey;
+}
+
+a {
+    font-size: 3rem;
+    text-decoration: none;
+    margin-right: 3rem;
+    color: black;
+}
+
+#container {
+    background-color: cadetblue;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20rem;
+    margin: 20rem auto;
+    width: 50%;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+#btn {
+    display: block;
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ff0000;
+    cursor: pointer;
+}
