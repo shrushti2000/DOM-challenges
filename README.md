@@ -4,3 +4,4 @@
 2. Get review- An app that helps you see next and previous review. It also shows random reviews.
 3. Modal- A simple modal implemented using JavaScript 
 4. ToDo List App- A simple todo list app in JavaScript.
+5. Tabs- Implemented Tabs feature (used data-id)
