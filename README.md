@@ -5,3 +5,5 @@
 3. Modal- A simple modal implemented using JavaScript 
 4. ToDo List App- A simple todo list app in JavaScript.
 5. Tabs- Implemented Tabs feature (used data-id)
+6. type-ahead - Implemented type-ahead feature
+
