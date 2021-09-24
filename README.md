@@ -6,4 +6,4 @@
 4. ToDo List App- A simple todo list app in JavaScript.
 5. Tabs- Implemented Tabs feature (used data-id)
 6. type-ahead - Implemented type-ahead feature
-
+7. array cardio- map(),filter(),reduce(),slice(),every(),some()
