@@ -7,3 +7,4 @@
 5. Tabs- Implemented Tabs feature (used data-id)
 6. type-ahead - Implemented type-ahead feature
 7. array cardio- map(),filter(),reduce(),slice(),every(),some()
+8. shopping cart-Implemented add to cart feature
