@@ -1,0 +1,17 @@
+.grand-parent-container{
+    width:600px;
+    background-color: blue;
+    height: 600px;
+}
+.parent-container{
+    width:400px;
+    background-color: red;
+    height: 400px;
+    
+}
+.child-container{
+    width: 100px;
+    margin: 20px;
+    background-color: pink;
+    height: 50px;
+}
