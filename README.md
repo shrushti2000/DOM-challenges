@@ -9,3 +9,4 @@
 7. array cardio- map(),filter(),reduce(),slice(),every(),some()
 8. shopping cart-Implemented add to cart feature
 9. quiz- Simple JavaScript quiz, used FormData
+10. Selectors- parent child selectors cardio
