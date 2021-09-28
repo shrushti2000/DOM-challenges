@@ -51,61 +51,81 @@ var quiz = [
   var label4=document.querySelector('#opt4')
   var submitBtn=document.querySelector('#submit-btn')
   const quizForm=document.querySelector('.question-container')
+  const questionContainer=document.querySelector('.q-container')
   var i=0;
+  const FormResults=new FormData(quizForm)
   function display(){
+    questionContainer.innerHTML=` <h3 class="question" >${quiz[i].question}</h3>
+    <input type="radio" id="input-opt1"  name="${quiz[i].idd}" value="${quiz[i].choices[0]}"/>
+    <label for="input-opt1" id="opt1"  >${quiz[i].choices[0]}</label>
+    <input type="radio" id="input-opt2"  name="${quiz[i].idd}" value="${quiz[i].choices[1]}"/>
+    <label for="input-opt2" id="opt2" >${quiz[i].choices[1]}</label>
+    <input type="radio" id="input-opt3"  name="${quiz[i].idd}" value="${quiz[i].choices[2]}"/>
+    <label for="input-opt3" id="opt3" >${quiz[i].choices[2]}</label>
+    <input type="radio" id="input-opt4" name="${quiz[i].idd}" value="${quiz[i].choices[3]}" />
+    <label for="input-opt4" id="opt4"  >${quiz[i].choices[3]}</label>`
+      
   
-    question.innerHTML=quiz[i].question;
-    label1.innerHTML=quiz[i].choices[0];
-    label2.innerHTML=quiz[i].choices[1];
-    label3.innerHTML=quiz[i].choices[2];
-    label4.innerHTML=quiz[i].choices[3];
-
-    // opt1.setAttribute("name",quiz[i].idd);
-    // opt2.setAttribute("name",quiz[i].idd);
-    // opt3.setAttribute("name",quiz[i].idd);
-    // opt4.setAttribute("name",quiz[i].idd);
-    opt1.name=`${quiz[i].idd}`
-    opt2.name=`${quiz[i].idd}`
-    opt3.name=`${quiz[i].idd}`
-    opt4.name=`${quiz[i].idd}`
-    
-    opt1.value=`${quiz[i].choices[0]}`
-    opt2.value=`${quiz[i].choices[1]}`
-    opt3.value=`${quiz[i].choices[2]}`
-    opt4.value=`${quiz[i].choices[3]}`
-
 
     i++;
+  }
+  function displayResult(){
+      var j=0;
+      var score=0;
+   
+    for(let value of FormResults.values()){
+      if(value===`${quiz[j].correct}`){
+          score++;
+      }
+      j++;
+  }
+  console.log(score)
+
   }
 
   function displayNextQuestions(){
-      if(i<quiz.length){
-    question.innerHTML=quiz[i].question;
-    label1.innerHTML=quiz[i].choices[0];
-    label2.innerHTML=quiz[i].choices[1];
-    label3.innerHTML=quiz[i].choices[2];
-    label4.innerHTML=quiz[i].choices[3];
-    // opt1.setAttribute("value",`${quiz[i].idd}`);
-    // opt2.setAttribute("value",`${quiz[i].idd}`);
-    // opt3.setAttribute("value",`${quiz[i].idd}`);
-    // opt4.setAttribute("value",`${quiz[i].idd}`);
-    opt1.name=`${quiz[i].idd}`
-    opt2.name=`${quiz[i].idd}`
-    opt3.name=`${quiz[i].idd}`
-    opt4.name=`${quiz[i].idd}`
+      
+    // question.innerHTML=quiz[i].question;
+    // label1.innerHTML=quiz[i].choices[0];
+    // label2.innerHTML=quiz[i].choices[1];
+    // label3.innerHTML=quiz[i].choices[2];
+    // label4.innerHTML=quiz[i].choices[3];
+    // // opt1.setAttribute("value",`${quiz[i].idd}`);
+    // // opt2.setAttribute("value",`${quiz[i].idd}`);
+    // // opt3.setAttribute("value",`${quiz[i].idd}`);
+    // // opt4.setAttribute("value",`${quiz[i].idd}`);
+    // opt1.name=`${quiz[i].idd}`
+    // opt2.name=`${quiz[i].idd}`
+    // opt3.name=`${quiz[i].idd}`
+    // opt4.name=`${quiz[i].idd}`
     
-    opt1.value=`${quiz[i].choices[0]}`
-    opt2.value=`${quiz[i].choices[1]}`
-    opt3.value=`${quiz[i].choices[2]}`
-    opt4.value=`${quiz[i].choices[3]}`
-    i++;
-      } else{
-       const FormResults=new FormData(quizForm)
-       console.log(FormResults)
-          for(let value of FormResults.values()){
-              console.log(value)
-          }
-      }
+    // opt1.value=`${quiz[i].choices[0]}`
+    // opt2.value=`${quiz[i].choices[1]}`
+    // opt3.value=`${quiz[i].choices[2]}`
+    // opt4.value=`${quiz[i].choices[3]}`
+    // i++;
+    //   } else{
+    //    const FormResults=new FormData(quizForm)
+    //    console.log(FormResults)
+    //       for(let value of FormResults.values()){
+    //           console.log(value)
+    //       }
+    if(i<quiz.length){
+    questionContainer.innerHTML=` <h3 class="question" >${quiz[i].question}</h3>
+    <input type="radio" id="input-opt1"  name="${quiz[i].idd}" value="${quiz[i].choices[0]}"/>
+    <label for="input-opt1" id="opt1"  >${quiz[i].choices[0]}</label>
+    <input type="radio" id="input-opt2"  name="${quiz[i].idd}" value="${quiz[i].choices[1]}"/>
+    <label for="input-opt2" id="opt2" >${quiz[i].choices[1]}</label>
+    <input type="radio" id="input-opt3"  name="${quiz[i].idd}" value="${quiz[i].choices[2]}"/>
+    <label for="input-opt3" id="opt3" >${quiz[i].choices[2]}</label>
+    <input type="radio" id="input-opt4" name="${quiz[i].idd}" value="${quiz[i].choices[3]}" />
+    <label for="input-opt4" id="opt4"  >${quiz[i].choices[3]}</label>`
+      
+    }else{
+        displayResult();
+    }
+i++;
   }
+
 submitBtn.addEventListener("click",displayNextQuestions)
   display();
