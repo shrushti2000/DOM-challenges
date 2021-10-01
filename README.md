@@ -11,3 +11,4 @@
 9. quiz- Simple JavaScript quiz, used FormData
 10. Selectors- parent child selectors cardio
 11. quiz 2- A simple quiz app
+12. Event Bubbling-Implemeted event bubbling
