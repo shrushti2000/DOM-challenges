@@ -1,0 +1,31 @@
+body{
+    font-size: 62.5%;
+    text-align: center;
+}
+.container{
+    margin-top:7rem ;
+}
+img{
+    width: 26rem;
+    height: 35rem;
+    cursor: pointer;
+}
+h2{
+    font-size: 3rem;
+    font-family: cursive;
+}
+.fa-heart{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: red;
+    font-size: 3rem;
+    animation: heart-grow 1s; 
+}
+@keyframes heart-grow {
+    100%{
+        transform: scale(7);
+        opacity: 0;
+    }
+}
