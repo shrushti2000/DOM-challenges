@@ -12,3 +12,4 @@
 10. Selectors- parent child selectors cardio
 11. quiz 2- A simple quiz app
 12. Event Bubbling-Implemeted event bubbling
+13. Instagram like feature -Implemented double tap like feature of Instagram
