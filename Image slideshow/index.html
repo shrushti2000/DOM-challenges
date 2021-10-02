@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        img{
+            width: 900px;
+           margin: 0 auto;
+            height: 600px;
+            }
+        
+    </style>
+</head>
+<body>
+    <h1>Image slide show</h1>
+    <img id="image" src="https://images.unsplash.com/photo-1628504672396-167ffac88e95?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"/>
+</body>
+<script>
+    var imagesArray=['https://images.unsplash.com/photo-1631741777775-81363741dc73?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80','https://images.unsplash.com/photo-1632044169534-00b12a6e430c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1123&q=80','https://images.unsplash.com/photo-1565053266993-18ae409835ef?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80','https://images.unsplash.com/photo-1573515597927-0066a55fc876?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80','https://images.unsplash.com/photo-1625242420602-a22dd7692b82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80','https://images.unsplash.com/photo-1627719736178-dfadf8f370d9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80']
+    var imageContainer=document.getElementById('image');
+    var i=0;
+    function slide(){
+        console.log("slided")
+        imageContainer.src=imagesArray[i];
+        if(i<imagesArray.length-1){
+            i++;
+        }else{
+            i=0;
+        }
+    }
+    setInterval(slide,2000)
+</script>
+</html>
