@@ -1,0 +1,15 @@
+.main-container{
+    position: absolute;
+    top:20%;
+   left: 30%;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+   
+    border: 1px solid black;
+}
+.container1,.container2,.container3,.container4{
+    width: 200px;
+    border: 1px solid black;
+}
