@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+    width: 300px;
+   margin: auto;
+}
+.sub-container{
+   width:90px ;
+   border: 1px solid black;
+    height: 100px;
+}
+#first-subConatiner{
+    background-color: red;
+}
+#second-subConatiner{
+    background-color: blue;
+}
+#third-subConatiner{
+    background-color: green;
+}
