@@ -19,3 +19,4 @@
 17. Blinking container-challenge 3
 18. Multi Color Box challenge
 19. calculator -Implemented basic calculator
+20. star ratings
