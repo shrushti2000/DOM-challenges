@@ -1,0 +1,8 @@
+#paint{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    max-width: max-content;
+    max-height: max-content;
+    border: 1px solid grey;
+}
