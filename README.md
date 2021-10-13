@@ -20,3 +20,4 @@
 18. Multi Color Box challenge- Color box challenge
 19. calculator -Implemented basic calculator
 20. star ratings -Implemented star rating feature
+21. Color Palette Challenge
