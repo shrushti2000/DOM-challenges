@@ -17,7 +17,7 @@
 15. Blinking container- challenge 1
 16. Blinking container -challenge 2
 17. Blinking container-challenge 3
-18. Multi Color Box challenge- Color box challenge
+18. Multi Color Box challenge- Color box challenge 1
 19. calculator -Implemented basic calculator
 20. star ratings -Implemented star rating feature
-21. Color Palette Challenge
+21. Color Palette Challenge- Coloring the grid challenge 2
