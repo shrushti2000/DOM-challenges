@@ -21,3 +21,4 @@
 19. calculator -Implemented basic calculator
 20. star ratings -Implemented star rating feature
 21. Color Palette Challenge- Coloring the grid challenge 2
+22. Color Spotter -Part 1 , Implemented random blinking boxes
