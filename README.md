@@ -1,5 +1,5 @@
 # DOM-challenges
-### This Repository contains several JavaScript DOM Challenges.
+### This Repository contains several JavaScript DOM Challenges implemented using pure Vanilla JS.
 1. Color Flipper- A simple App that lets you change background color. 
 2. Get review- An app that helps you see next and previous review. It also shows random reviews.
 3. Modal- A simple modal implemented using JavaScript 
@@ -21,3 +21,4 @@
 19. calculator -Implemented basic calculator
 20. star ratings -Implemented star rating feature
 21. Color Palette Challenge- Coloring the grid challenge 2
+22. Color Spotter Challenge-Part 1 , Implemented random blinking boxes in the grid.
