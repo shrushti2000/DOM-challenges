@@ -22,4 +22,4 @@
 20. star ratings -Implemented star rating feature
 21. Color Palette Challenge- Coloring the grid challenge 2
 22. Color Spotter Challenge-Part 1 , Implemented random blinking boxes in the grid.
-23. Color Spotter Challenge-Part 2, Implemented adding score feature
+23. Color Spotter Challenge-Part 2, Implemented adding score feature in part 1 challenge
