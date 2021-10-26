@@ -20,6 +20,6 @@
 18. Multi Color Box challenge- Color box challenge 1
 19. calculator -Implemented basic calculator
 20. star ratings -Implemented star rating feature
-21. Color Palette Challenge- Coloring the grid challenge 2
+21. Color Palette Challenge- Pick a random color from the pallete and color any grid.
 22. Color Spotter Challenge-Part 1 , Implemented random blinking boxes in the grid.
 23. Color Spotter Challenge-Part 2, Implemented adding score feature in part 1 challenge
